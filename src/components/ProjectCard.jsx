@@ -5,7 +5,11 @@ export default function ProjectCard({ project, onOpen }) {
     const isReverse = layout === 'large-reverse'
     return (
       <div
+        role="button"
+        tabIndex={0}
         onClick={() => onOpen(project.id)}
+        onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onOpen(project.id); } }}
+        aria-label={`View details for ${title}`}
         className={`md:col-span-2 bento-card project-card flex flex-col ${
           isReverse ? 'md:flex-row-reverse' : 'md:flex-row'
         } cursor-pointer group overflow-hidden backdrop-blur-sm bg-[#1A1A1A]/90`}
@@ -39,7 +43,11 @@ export default function ProjectCard({ project, onOpen }) {
 
   return (
     <div
+      role="button"
+      tabIndex={0}
       onClick={() => onOpen(project.id)}
+      onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onOpen(project.id); } }}
+      aria-label={`View details for ${title}`}
       className="bento-card project-card flex flex-col cursor-pointer group overflow-hidden backdrop-blur-sm bg-[#1A1A1A]/90"
     >
       <div className="h-48 flex items-center justify-center border-b border-dev-border bg-dev-surface/50">

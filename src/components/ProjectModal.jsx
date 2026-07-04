@@ -90,7 +90,7 @@ export default function ProjectModal({ project, onClose }) {
               <a
                 href={project.link}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="mt-6 sm:mt-0 flex items-center justify-center gap-2 bg-dev-surface border border-dev-border text-dev-text px-6 py-2.5 rounded-lg font-semibold text-sm hover:text-white hover:border-dev-orange hover:bg-dev-orange/10 transition-all w-max shadow-sm"
               >
                 View Live Project <i className="ri-external-link-line"></i>

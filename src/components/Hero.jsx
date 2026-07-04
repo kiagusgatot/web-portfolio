@@ -25,10 +25,8 @@ export default function Hero({ profile }) {
           </h2>
 
           <div className="flex items-center gap-2 mb-6 text-sm text-dev-muted">
-            <i className="ri-building-2-line text-dev-orange"></i>
-            <span>
-              Currently at <span className="text-white font-medium">{profile.currentCompany}</span>
-            </span>
+            <i className="ri-briefcase-line text-dev-orange"></i>
+            <span className="text-white font-medium">Available for Work</span>
           </div>
 
           <p className="text-lg md:text-xl text-dev-muted mb-10 max-w-lg leading-relaxed bg-dev-bg/50 backdrop-blur-sm p-4 rounded-xl border border-dev-border/50">
@@ -47,7 +45,7 @@ export default function Hero({ profile }) {
             <a
               href={cvFile}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="bg-dev-surface/80 backdrop-blur-sm border border-dev-border text-dev-text px-6 md:px-8 py-3 md:py-3.5 rounded-lg font-semibold text-base md:text-lg hover:border-dev-muted hover:bg-[#2A2A2A] transition-colors flex items-center justify-center gap-2 w-full sm:w-auto"
             >
               <i className="ri-file-download-line"></i> Resum{'\u00e9'}

@@ -17,7 +17,7 @@ export default function Contact({ profile }) {
             <a
               href={profile.linkedin}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="hover:text-white transition-colors flex items-center gap-2"
             >
               <i className="ri-linkedin-fill text-xl"></i> LinkedIn
@@ -25,7 +25,7 @@ export default function Contact({ profile }) {
             <a
               href={profile.whatsapp}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="hover:text-white transition-colors flex items-center gap-2"
             >
               <i className="ri-whatsapp-fill text-xl"></i> WhatsApp

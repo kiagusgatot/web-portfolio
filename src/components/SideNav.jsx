@@ -14,6 +14,7 @@ export default function SideNav() {
             key={link.href}
             href={link.href}
             title={link.label}
+            aria-label={link.label}
             className="w-12 h-12 rounded-full flex items-center justify-center text-dev-muted hover:text-white hover:bg-white/10 transition-all"
           >
             <i className={`${link.icon} text-xl`}></i>
@@ -26,6 +27,7 @@ export default function SideNav() {
         <a
           href="#contact"
           title="Let's Talk"
+          aria-label="Let's Talk"
           className="w-12 h-12 rounded-full flex items-center justify-center bg-dev-text text-dev-bg hover:bg-dev-orange hover:text-white transition-colors shadow-lg"
         >
           <i className="ri-mail-send-line text-xl"></i>

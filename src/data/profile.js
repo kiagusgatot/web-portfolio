@@ -15,8 +15,8 @@ export const profile = {
     'I combine product-thinking with technical fundamentals to deliver scalable enterprise and government digital platforms.',
   taglineHighlight: 'product-thinking',
   summary:
-    "UI/UX Designer with 3+ years of experience in digital product design, enterprise systems, government platforms, dashboards, and visual communication. Currently designing enterprise and government digital products at PT. Eka Abhipraya Semesta, creating wireframes, high-fidelity UI, prototypes, user flows, and design system elements.",
-  currentCompany: 'PT. Eka Abhipraya Semesta',
+    "UI/UX Designer with 3+ years of experience in digital product design, enterprise systems, government platforms, dashboards, and visual communication. Available for work to create wireframes, high-fidelity UI, prototypes, user flows, and design system elements.",
+  currentCompany: 'Available for Work',
   stats: [
     { value: '3+', label: 'Years Exp.' },
     { value: '7+', label: 'Projects' },
