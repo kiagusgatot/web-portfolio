@@ -20,7 +20,7 @@ export default function ProfileCard({ profile }) {
         <div>
           <h3 className="text-xl font-bold text-white">Hello!</h3>
           <p className="text-sm text-dev-muted font-mono mt-1 flex items-center gap-2 bg-dev-surface border border-dev-border px-3 py-1.5 rounded-md w-max">
-            <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> Currently at PT. Eka Abhipraya Semesta.
+            <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> Available for Work
           </p>
         </div>
       </div>
