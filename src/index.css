@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: transparent;
+  color: #FAFAFA;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+@layer components {
+  .bento-card {
+    background-color: #1A1A1A;
+    border: 1px solid #333333;
+    border-radius: 1.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.5);
+  }
+
+  .bento-card:hover {
+    background-color: #222222;
+    border-color: #4A4A4A;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.8);
+  }
+
+  .project-card:hover {
+    border-color: #FF5E1A;
+    box-shadow: 0 10px 40px -10px rgba(255, 94, 26, 0.15);
+  }
+
+  .project-icon {
+    transition: all 0.3s ease;
+  }
+
+  .project-card:hover .project-icon {
+    color: #FF5E1A;
+    transform: scale(1.1);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, #FFFFFF 0%, #A0A0A0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4A4A4A;
+}
