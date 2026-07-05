@@ -41,23 +41,7 @@ export default function ProfileCard({ profile }) {
         ))}
       </div>
 
-      <div className="w-full h-px bg-dev-border"></div>
 
-      <div className="space-y-1">
-        <p className="font-mono text-xs text-dev-muted uppercase font-semibold">Location</p>
-        <p className="text-lg font-medium text-white flex items-center gap-2">
-          <i className="ri-map-pin-2-fill text-dev-orange"></i> {profile.location}
-        </p>
-      </div>
-
-      <div className="w-full h-px bg-dev-border"></div>
-
-      <div className="space-y-1">
-        <p className="font-mono text-xs text-dev-muted uppercase font-semibold">Education</p>
-        <p className="text-lg font-medium text-white flex items-center gap-2">
-          <i className="ri-graduation-cap-fill text-dev-orange"></i> {profile.education}
-        </p>
-      </div>
 
 
     </div>
