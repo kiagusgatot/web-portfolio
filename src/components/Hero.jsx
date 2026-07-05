@@ -24,9 +24,16 @@ export default function Hero({ profile }) {
             {profile.roleLabel} <span className="text-dev-orange">{profile.role}</span>
           </h2>
 
+          <div className="inline-flex items-center gap-2 mb-4 px-3 py-1.5 rounded-full bg-dev-surface border border-dev-border text-xs font-mono text-dev-muted w-max">
+            <i className="ri-focus-3-line text-dev-orange"></i>
+            {profile.specialization}
+          </div>
+
           <div className="flex items-center gap-2 mb-6 text-sm text-dev-muted">
-            <i className="ri-briefcase-line text-dev-orange"></i>
-            <span className="text-white font-medium">Available for Work</span>
+            <i className="ri-building-2-line text-dev-orange"></i>
+            <span>
+              Currently at <span className="text-white font-medium">{profile.currentCompany}</span>
+            </span>
           </div>
 
           <p className="text-lg md:text-xl text-dev-muted mb-10 max-w-lg leading-relaxed bg-dev-bg/50 backdrop-blur-sm p-4 rounded-xl border border-dev-border/50">

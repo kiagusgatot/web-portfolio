@@ -43,7 +43,30 @@ export default function ProfileCard({ profile }) {
 
 
 
+      <div className="w-full h-px bg-dev-border"></div>
 
+      <div className="space-y-3 relative z-10">
+        <p className="font-mono text-xs text-dev-muted uppercase font-semibold">Trusted By</p>
+        <div className="flex flex-wrap gap-2">
+          {profile.trustedBy.map((client) => (
+            <span
+              key={client.name}
+              className="flex items-center gap-1.5 px-3 py-1.5 bg-dev-surface border border-dev-border rounded-md text-xs sm:text-sm text-dev-text"
+            >
+              <i className={`${client.icon} text-dev-orange`}></i>
+              {client.name}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      <a
+        href="#tech-stack"
+        className="relative z-10 flex items-center justify-center gap-2 text-sm font-mono text-dev-muted hover:text-dev-orange transition-colors pt-1 group"
+      >
+        View tech stack & tools
+        <i className="ri-arrow-down-line group-hover:translate-y-0.5 transition-transform"></i>
+      </a>
     </div>
   )
 }

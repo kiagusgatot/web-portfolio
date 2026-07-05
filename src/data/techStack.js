@@ -11,14 +11,10 @@ import {
   SiTailwindcss,
 } from 'react-icons/si'
 
-/**
- * Each entry either has an `icon` (an official brand icon component,
- * bundled via react-icons so nothing depends on an external CDN at
- * runtime) or a `letter` fallback for tools that don't have a
- * redistributable simple-icons brand mark (individual Adobe apps,
- * ChatGPT, Google Stitch, dbdiagram.io). `color` is the tool's real
- * brand color, used to tint the icon or the letter badge.
- */
+// Each entry either has an `icon` (official brand icon component from
+// react-icons/si) or a `letter` fallback for tools without a redistributable
+// simple-icons mark (individual Adobe apps, ChatGPT, Google Stitch, dbdiagram.io).
+// `color` is the tool's real brand color.
 export const techStack = [
   { name: 'Figma', icon: SiFigma, color: '#F24E1E' },
   { name: 'Adobe Illustrator', letter: 'Ai', color: '#FF9A00' },

@@ -7,7 +7,6 @@ export default function TechStackSection({ techStack }) {
         <h2 className="text-3xl font-bold text-white">Tech Stack & Tools</h2>
         <div className="h-px flex-1 bg-gradient-to-r from-dev-border to-transparent"></div>
       </div>
-
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 sm:gap-4 md:gap-5">
         {techStack.map((tool) => (
           <ToolCard key={tool.name} tool={tool} />
