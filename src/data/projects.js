@@ -78,6 +78,7 @@ export const projects = [
       'Operational data views built for clarity at a glance',
     ],
     tools: ['Figma', 'User Flow', 'System Mapping'],
+    link: 'https://sumba-emanifest.vercel.app/',
   },
   {
     id: 'ekompu',
