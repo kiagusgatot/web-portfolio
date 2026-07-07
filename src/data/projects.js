@@ -118,7 +118,7 @@ export const projects = [
       'Detailed transaction history with filtering and a 7-day activity bar chart',
     ],
     tools: ['React', 'Laravel', 'Tailwind CSS'],
-    link: 'https://github.com/kiagusgatot/mini-wallet',
+    link: 'https://yatrapay.vercel.app/',
   },
   {
     id: 'gearbox',
@@ -139,6 +139,6 @@ export const projects = [
       'Interactive digital inspections and automated service checklists',
     ],
     tools: ['React', 'Laravel', 'Tailwind CSS'],
-    link: 'https://github.com/kiagusgatot/gearbox',
+    link: 'https://gearbox-two.vercel.app/',
   },
 ]
