@@ -1,3 +1,8 @@
+import logoPU from '../assets/logoPU.png'
+import logoKorlantas from '../assets/logoKorlantas.png'
+import logoKemenHub from '../assets/logoKemenHub.png'
+import logoKF from '../assets/logoKF.png'
+
 export const profile = {
   fullName: 'Ki Agus Gatot Mahendra Setiawan',
   displayName: 'Ki Agus Gatot.',
@@ -8,6 +13,8 @@ export const profile = {
   whatsapp: 'https://wa.me/6281554283885',
   email: 'kiagusgatot@gmail.com',
   linkedin: 'https://www.linkedin.com/in/kiagusgatot/',
+  instagram: 'https://www.instagram.com/kiagusgatot/',
+  behance: 'https://www.behance.net/kiagusgatot',
   resumeFile: 'CV - KI AGUS GATOT MAHENDRA SETIAWAN.pdf',
   tagline:
     'I combine product-thinking with technical fundamentals to deliver scalable enterprise and government digital platforms.',
@@ -22,10 +29,10 @@ export const profile = {
     { value: '17', label: 'Tools Used' },
   ],
   trustedBy: [
-    { name: 'Ministry of Public Works', icon: 'ri-government-fill' },
-    { name: 'Korlantas POLRI', icon: 'ri-shield-check-fill' },
-    { name: 'Ministry of Transportation', icon: 'ri-truck-fill' },
-    { name: 'Kimia Farma Apotek', icon: 'ri-capsule-fill' },
+    { name: 'Ministry of Public Works', icon: 'ri-government-fill', logo: logoPU },
+    { name: 'Korlantas POLRI', icon: 'ri-shield-check-fill', logo: logoKorlantas },
+    { name: 'Ministry of Transportation', icon: 'ri-truck-fill', logo: logoKemenHub },
+    { name: 'Kimia Farma Apotek', icon: 'ri-capsule-fill', logo: logoKF },
   ],
 }
 

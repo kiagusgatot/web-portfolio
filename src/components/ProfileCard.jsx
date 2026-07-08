@@ -33,7 +33,7 @@ export default function ProfileCard({ profile }) {
             key={stat.label}
             className="flex flex-col items-center text-center gap-1 bg-dev-surface border border-dev-border rounded-xl py-3 px-1"
           >
-            <span className="text-lg sm:text-xl font-bold text-white leading-none">{stat.value}</span>
+            <span className="text-lg sm:text-xl font-bold text-dev-orange leading-none">{stat.value}</span>
             <span className="text-[9px] sm:text-[10px] font-mono uppercase tracking-wide text-dev-muted leading-tight">
               {stat.label}
             </span>
@@ -45,17 +45,22 @@ export default function ProfileCard({ profile }) {
 
       <div className="w-full h-px bg-dev-border"></div>
 
-      <div className="space-y-3 relative z-10">
+      <div className="space-y-3 relative z-10 w-full">
         <p className="font-mono text-xs text-dev-muted uppercase font-semibold">Trusted By</p>
-        <div className="flex flex-wrap gap-2">
+        <div className="grid grid-cols-2 gap-2 sm:gap-3 w-full">
           {profile.trustedBy.map((client) => (
-            <span
+            <div
               key={client.name}
-              className="flex items-center gap-1.5 px-3 py-1.5 bg-dev-surface border border-dev-border rounded-md text-xs sm:text-sm text-dev-text"
+              className="flex items-center gap-2 sm:gap-2.5 px-3 py-2 sm:px-3 sm:py-2.5 bg-[#1F1F1F] border border-dev-border rounded-lg group"
+              title={client.name}
             >
-              <i className={`${client.icon} text-dev-orange`}></i>
-              {client.name}
-            </span>
+              <img 
+                src={client.logo} 
+                alt={client.name} 
+                className="w-5 h-5 sm:w-6 sm:h-6 object-contain shrink-0" 
+              />
+              <span className="text-[10px] sm:text-xs font-semibold text-white/90 truncate">{client.name}</span>
+            </div>
           ))}
         </div>
       </div>
