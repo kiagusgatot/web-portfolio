@@ -1,15 +1,17 @@
 export const experience = [
   {
     period: 'Sep 2023 - Present',
-    role: 'UI/UX Designer',
+    role: 'Product Designer',
     company: 'PT. Eka Abhipraya Semesta',
     location: 'Jakarta',
     points: [
-      'Owned the end-to-end UI/UX design process for enterprise and government digital products, from requirements gathering to final UI handoff, using Figma to create wireframes, high-fidelity interfaces, and developer-ready design outputs.',
-      'Designed executive dashboards and enterprise systems for national government institutions, including <strong>SatuCK</strong> for the Ministry of Public Works, <strong>Korlantas Media Intelligence</strong> for Korlantas POLRI, and <strong>SUMBA</strong> for the Ministry of Transportation.',
-      'Created interactive prototypes and usability testing artifacts in Figma to validate design solutions before development handoff, improving design clarity and reducing implementation gaps.',
-      'Built and maintained reusable component libraries and design system elements across concurrent enterprise and government projects, improving visual consistency, scalability, and design efficiency.',
-      'Presented mockups, user flows, and business process maps to stakeholders, using Mermaid, Gemini, Claude, and Google Stitch to support workflow mapping, ideation, and alignment between business goals and development teams.',
+      'Led end-to-end product design for 5 government digital projects, from client requirements and user flows to high-fidelity UI, prototypes, and developer-ready handoff.',
+      'Designed complex dashboard and enterprise system interfaces, turning operational and strategic data into clear, usable, and decision-ready experiences.',
+      'Created business process maps, user flows, and sequence diagrams using Gemini, Claude, and Mermaid.ai, reducing documentation time by 1–2 days per project request.',
+      'Reduced concept validation time from 3–5 days to under 24 hours through AI-assisted research, rapid ideation, and functional HTML/CSS/JavaScript prototypes.',
+      'Conducted usability reviews across 5 projects, identifying UX issues before development and translating findings into prioritized design improvements.',
+      'Built reusable Figma components and design system elements to improve UI consistency, scalability, and design efficiency across concurrent projects.',
+      'Presented design rationale, prototypes, user flows, and process maps to stakeholders and developers to align user needs, business goals, and technical requirements.',
     ],
   },
   {
@@ -18,10 +20,10 @@ export const experience = [
     company: 'PT. Kimia Farma Apotek',
     location: 'Jakarta',
     points: [
-      'Maintained brand consistency across a nationwide network of 1,000+ Kimia Farma Apotek pharmacy outlets by applying corporate brand guidelines across digital and print marketing materials.',
-      'Designed campaign-ready creative assets, including social media content, brochures, catalogs, and presentation materials to support promotional initiatives across a large-scale retail pharmacy network.',
-      'Translated marketing campaign objectives into clear visual communication materials by collaborating with cross-functional marketing stakeholders.',
-      'Leveraged Adobe Illustrator, Photoshop, After Effects, and Premiere Pro to create digital, print, motion, and video-based assets for brand-consistent marketing campaigns.',
+      'Maintained visual consistency across 1,000+ pharmacy outlets by applying corporate brand guidelines to digital, print, campaign, and presentation materials.',
+      'Designed digital, print, motion, and video assets for large-scale marketing campaigns, helping support national promotional rollouts across multiple channels.',
+      'Collaborated with marketing stakeholders to turn campaign objectives into clear, brand-aligned visual materials for social media, brochures, catalogs, and presentations.',
+      'Delivered campaign-ready creative assets within fast-paced production timelines, supporting continuous promotional activity and consistent brand visibility across the retail pharmacy network.',
     ],
   },
 ]

@@ -19,8 +19,15 @@ export default function ProjectCard({ project, onOpen }) {
             isReverse ? 'md:border-l' : 'md:border-r'
           } border-dev-border`}
         >
-          <div className="font-mono text-xs font-semibold text-dev-muted mb-4">
-            {index} // {tag}
+          <div className="flex justify-between items-center mb-4">
+            <div className="font-mono text-xs font-semibold text-dev-muted">
+              {index} // {tag}
+            </div>
+            {project.client === 'Personal Project' && (
+              <span className="px-2 py-1 bg-dev-orange/10 border border-dev-orange/20 rounded text-[10px] font-mono text-dev-orange font-semibold uppercase tracking-wider">
+                Personal Project
+              </span>
+            )}
           </div>
           <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-dev-orange transition-colors">
             {title}
@@ -54,8 +61,15 @@ export default function ProjectCard({ project, onOpen }) {
         <i className={`${icon} text-6xl text-[#4A4A4A] project-icon`}></i>
       </div>
       <div className="p-6 md:p-8 flex-1 flex flex-col">
-        <div className="font-mono text-xs font-semibold text-dev-muted mb-3">
-          {index} // {tag}
+        <div className="flex justify-between items-center mb-3">
+          <div className="font-mono text-xs font-semibold text-dev-muted">
+            {index} // {tag}
+          </div>
+          {project.client === 'Personal Project' && (
+            <span className="px-2 py-1 bg-dev-orange/10 border border-dev-orange/20 rounded text-[10px] font-mono text-dev-orange font-semibold uppercase tracking-wider">
+              Personal Project
+            </span>
+          )}
         </div>
         <h3 className="text-xl font-bold text-white mb-2 group-hover:text-dev-orange transition-colors">{title}</h3>
         <p className="text-sm text-dev-muted mb-6 line-clamp-2">{summary}</p>

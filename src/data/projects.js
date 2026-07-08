@@ -101,12 +101,12 @@ export const projects = [
     tools: ['Figma', 'Responsive Design', 'UI/UX'],
   },
   {
-    id: 'mini-wallet',
+    id: 'yatra-pay',
     index: '06',
     tag: 'FINTECH',
     layout: 'small',
     icon: 'ri-wallet-3-fill',
-    title: 'Mini Wallet',
+    title: 'Yatra Pay',
     client: 'Personal Project',
     summary:
       'A fullstack digital wallet application featuring secure authentication, peer-to-peer transfers, and transaction history.',

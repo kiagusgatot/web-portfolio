@@ -2,7 +2,7 @@ export const profile = {
   fullName: 'Ki Agus Gatot Mahendra Setiawan',
   displayName: 'Ki Agus Gatot.',
   role: 'Designer',
-  roleLabel: 'UI/UX',
+  roleLabel: 'Product',
   eyebrow: 'PROTOTYPING IDEAS',
   phone: '+6281554283885',
   whatsapp: 'https://wa.me/6281554283885',
@@ -13,7 +13,7 @@ export const profile = {
     'I combine product-thinking with technical fundamentals to deliver scalable enterprise and government digital platforms.',
   taglineHighlight: 'product-thinking',
   summary:
-    "UI/UX Designer with 3+ years of experience in digital product design, enterprise systems, government platforms, dashboards, and visual communication. Available for work to create wireframes, high-fidelity UI, prototypes, user flows, and design system elements.",
+    "Product Designer with 3+ years of experience in digital product design, enterprise systems, government platforms, dashboards, and visual communication. Available for work to create wireframes, high-fidelity UI, prototypes, user flows, and design system elements.",
   currentCompany: 'PT. Eka Abhipraya Semesta',
   specialization: 'Enterprise & Government Product Design',
   stats: [
