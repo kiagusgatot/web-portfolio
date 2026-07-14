@@ -99,6 +99,7 @@ export const projects = [
       'Close collaboration with developers to ensure clean design hand-off',
     ],
     tools: ['Figma', 'Responsive Design', 'UI/UX'],
+    link: 'https://ekompu-app.vercel.app/',
   },
   {
     id: 'yatra-pay',
