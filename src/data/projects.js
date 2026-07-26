@@ -79,6 +79,9 @@ export const projects = [
     ],
     tools: ['Figma', 'User Flow', 'System Mapping'],
     link: 'https://sumba-emanifest.vercel.app/',
+    figma:
+      'https://www.figma.com/design/OZ4UlFWeLr3BFiz28QNYx4/SUMBA?node-id=0-1&t=6ckZPfIkUCTfKMBZ-1',
+    github: 'https://github.com/kiagusgatot/sumba-emanifest.git',
   },
   {
     id: 'ekompu',
@@ -100,6 +103,7 @@ export const projects = [
     ],
     tools: ['Figma', 'Responsive Design', 'UI/UX'],
     link: 'https://ekompu-app.vercel.app/',
+    github: 'https://github.com/kiagusgatot/ekompu-app.git',
   },
   {
     id: 'yatra-pay',
@@ -121,6 +125,7 @@ export const projects = [
     ],
     tools: ['React', 'Laravel', 'Tailwind CSS'],
     link: 'https://yatrapay.vercel.app/',
+    github: 'https://github.com/kiagusgatot/mini-wallet.git',
   },
   {
     id: 'gearbox',
@@ -142,5 +147,8 @@ export const projects = [
     ],
     tools: ['React', 'Laravel', 'Tailwind CSS'],
     link: 'https://gearbox-two.vercel.app/',
+    figma:
+      'https://www.figma.com/design/NKDMvBCQ0BfsFulfQwuQHg/Gearbox?node-id=55-167&t=52VAFG2hVnaWBbYL-1',
+    github: 'https://github.com/kiagusgatot/gearbox.git',
   },
 ]

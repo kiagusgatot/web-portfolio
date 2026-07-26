@@ -75,7 +75,7 @@ export default function ProjectModal({ project, onClose }) {
             </ul>
           </div>
 
-          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 pt-6 border-t border-dev-border">
+          <div className="flex flex-col gap-6 pt-6 border-t border-dev-border">
             <div>
               <h4 className="text-xs font-mono text-dev-muted uppercase font-semibold mb-3">Tech & Tools</h4>
               <div className="flex gap-2 flex-wrap font-mono text-xs">
@@ -86,16 +86,43 @@ export default function ProjectModal({ project, onClose }) {
                 ))}
               </div>
             </div>
-            {project.link && project.link !== '#' && (
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-6 sm:mt-0 flex items-center justify-center gap-2 bg-dev-surface border border-dev-border text-dev-text px-6 py-2.5 rounded-lg font-semibold text-sm hover:text-white hover:border-dev-orange hover:bg-dev-orange/10 transition-all w-max shadow-sm"
-              >
-                View Live Project <i className="ri-external-link-line"></i>
-              </a>
-            )}
+            {(project.link && project.link !== '#') || project.figma || project.github ? (
+              <div>
+                <h4 className="text-xs font-mono text-dev-muted uppercase font-semibold mb-3">Direct Link Project</h4>
+                <div className="flex flex-wrap items-center gap-3">
+                  {project.link && project.link !== '#' && (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="h-11 min-w-[140px] flex items-center justify-center gap-2 bg-dev-surface border border-dev-border text-dev-text px-5 py-2.5 rounded-lg font-semibold text-sm hover:text-white hover:border-dev-orange hover:bg-dev-orange/10 transition-all shadow-sm"
+                    >
+                      View Live Project <i className="ri-external-link-line text-lg"></i>
+                    </a>
+                  )}
+                  {project.figma && (
+                    <a
+                      href={project.figma}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="h-11 min-w-[140px] flex items-center justify-center gap-2 bg-dev-surface border border-dev-border text-dev-text px-5 py-2.5 rounded-lg font-semibold text-sm hover:text-white hover:border-dev-orange hover:bg-dev-orange/10 transition-all shadow-sm"
+                    >
+                      <i className="ri-figma-line text-lg"></i> Figma
+                    </a>
+                  )}
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="h-11 min-w-[140px] flex items-center justify-center gap-2 bg-dev-surface border border-dev-border text-dev-text px-5 py-2.5 rounded-lg font-semibold text-sm hover:text-white hover:border-dev-orange hover:bg-dev-orange/10 transition-all shadow-sm"
+                    >
+                      <i className="ri-github-fill text-lg"></i> GitHub
+                    </a>
+                  )}
+                </div>
+              </div>
+            ) : null}
           </div>
         </div>
       </div>
