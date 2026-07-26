@@ -1,10 +1,16 @@
 export default function ToolCard({ tool }) {
-  const { name, icon: Icon, letter, color } = tool
+  const { name, icon: Icon, logoUrl, letter, color } = tool
 
   return (
     <div className="bento-card group flex flex-col items-center justify-center gap-3 p-5 sm:p-6 text-center cursor-default">
       <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-dev-surface border border-dev-border flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
-        {Icon ? (
+        {logoUrl ? (
+          <img
+            src={logoUrl}
+            alt={name}
+            className="w-7 h-7 sm:w-9 sm:h-9 object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
+          />
+        ) : Icon ? (
           <Icon
             className="text-xl sm:text-2xl grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
             style={{ color }}

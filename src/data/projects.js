@@ -6,6 +6,7 @@ export const projects = [
     tag: 'GOV TECH',
     layout: 'small',
     icon: 'ri-dashboard-2-fill',
+    banner: '/images/projects/banner-korlantas.jpg',
     title: 'Korlantas Media Intelligence',
     client: 'Korlantas POLRI',
     summary:
@@ -27,6 +28,7 @@ export const projects = [
     tag: 'GOV TECH',
     layout: 'small',
     icon: 'ri-building-4-fill',
+    banner: '/images/projects/banner-satuck.jpg',
     title: 'SatuCK',
     client: 'Ministry of Public Works',
     summary:
@@ -48,6 +50,7 @@ export const projects = [
     tag: 'ENTERPRISE',
     layout: 'small',
     icon: 'ri-team-fill',
+    banner: '/images/projects/banner-ehrm.jpg',
     title: 'EHRM',
     client: 'Ministry of Public Works',
     summary:
@@ -68,6 +71,7 @@ export const projects = [
     tag: 'GOV TECH',
     layout: 'small',
     icon: 'ri-truck-fill',
+    banner: '/images/projects/banner-sumba.jpg',
     title: 'SUMBA',
     client: 'Ministry of Transportation',
     summary:
@@ -89,9 +93,10 @@ export const projects = [
   {
     id: 'ekompu',
     index: '05',
-    tag: 'PUBLIC SERVICE',
+    tag: 'GOV TECH',
     layout: 'small',
     icon: 'ri-computer-fill',
+    banner: '/images/projects/banner-ekompu.jpg',
     title: 'EkomPU',
     client: 'Ministry of Public Works',
     summary:
@@ -114,6 +119,7 @@ export const projects = [
     tag: 'FINTECH',
     layout: 'small',
     icon: 'ri-wallet-3-fill',
+    banner: '/images/projects/banner-yatrapay.jpg',
     title: 'Yatra Pay',
     client: 'Personal Project',
     summary:
@@ -136,6 +142,7 @@ export const projects = [
     tag: 'AUTOMOTIVE',
     layout: 'small',
     icon: 'ri-tools-fill',
+    banner: '/images/projects/banner-gearbox.jpg',
     title: 'Gearbox',
     client: 'Personal Project',
     summary:

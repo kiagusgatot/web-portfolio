@@ -41,8 +41,14 @@ export default function ProjectCard({ project, onOpen }) {
             ))}
           </div>
         </div>
-        <div className="md:w-1/2 p-8 md:p-12 flex items-center justify-center bg-dev-surface/50">
-          <i className={`${icon} text-7xl text-[#4A4A4A] project-icon`}></i>
+        <div className="md:w-1/2 relative bg-dev-surface/50 overflow-hidden min-h-[250px]">
+          {project.banner ? (
+            <img src={project.banner} alt={title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+          ) : (
+            <div className="absolute inset-0 flex items-center justify-center">
+              <i className={`${icon} text-7xl text-[#4A4A4A] project-icon`}></i>
+            </div>
+          )}
         </div>
       </div>
     )
@@ -57,8 +63,14 @@ export default function ProjectCard({ project, onOpen }) {
       aria-label={`View details for ${title}`}
       className="bento-card project-card flex flex-col cursor-pointer group overflow-hidden backdrop-blur-sm bg-[#1A1A1A]/90"
     >
-      <div className="h-48 flex items-center justify-center border-b border-dev-border bg-dev-surface/50">
-        <i className={`${icon} text-6xl text-[#4A4A4A] project-icon`}></i>
+      <div className="h-48 relative border-b border-dev-border bg-dev-surface/50 overflow-hidden">
+        {project.banner ? (
+          <img src={project.banner} alt={title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+        ) : (
+          <div className="absolute inset-0 flex items-center justify-center">
+            <i className={`${icon} text-6xl text-[#4A4A4A] project-icon`}></i>
+          </div>
+        )}
       </div>
       <div className="p-6 md:p-8 flex-1 flex flex-col">
         <div className="flex justify-between items-center mb-3">
