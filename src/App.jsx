@@ -32,7 +32,7 @@ export default function App() {
       <Hero profile={profile} />
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-20 md:mt-32 space-y-24 md:space-y-32 relative z-10 pb-32 md:pb-[150px]">
-        <ProjectsSection projects={projects} onOpenProject={setActiveProjectId} />
+        <ProjectsSection projects={projects.filter(p => !p.hidden)} onOpenProject={setActiveProjectId} />
         <ExperienceSection experience={experience} />
         <TechStackSection techStack={techStack} />
         <Contact profile={profile} />

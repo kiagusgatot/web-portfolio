@@ -1,6 +1,7 @@
 export const projects = [
   {
     id: 'korlantas',
+    hidden: true,
     index: '01',
     tag: 'GOV TECH',
     layout: 'small',
@@ -21,6 +22,7 @@ export const projects = [
   },
   {
     id: 'satuck',
+    hidden: true,
     index: '02',
     tag: 'GOV TECH',
     layout: 'small',
@@ -41,6 +43,7 @@ export const projects = [
   },
   {
     id: 'ehrm',
+    hidden: true,
     index: '03',
     tag: 'ENTERPRISE',
     layout: 'small',
